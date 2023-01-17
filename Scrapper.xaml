@@ -1,0 +1,254 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Scrapper" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="846,2706" sap2010:WorkflowViewState.IdRef="Scrapper_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ucat="clr-namespace:UiPath.Core.Activities.TextModifications;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="76">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.TextModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="49">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Scrapper" sap:VirtualizedContainerService.HintSize="592,2641" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_chuncks" />
+      <Variable x:TypeArguments="x:Int32" Name="Count" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Amazon.in - Today's Deals" sap:VirtualizedContainerService.HintSize="530,2530" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5a1aa02d-14ea-4ecb-8c56-e6c5fe460300" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2313" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_Amazon" />
+              <Variable x:TypeArguments="x:String" Name="Time" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Mobiles'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a1aa02d-14ea-4ecb-8c56-e6c5fe460300" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/gp/bestsellers/electronics/1389432031?ref_=Oct_d_obs_S&amp;pd_rd_w=furEf&amp;content-id=amzn1.sym.63783fbe-7156-4f6f-9542-5efc5e74da13&amp;pf_rd_p=63783fbe-7156-4f6f-9542-5efc5e74da13&amp;pf_rd_r=7XTT2064GJRJ91PE3W4X&amp;pd_rd_wg=e5eO7&amp;pd_rd_r=cd81087f-7593-43c1-9b5d-b80581613d4c" DesignTimeRectangle="287, 221, 67, 28" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Mobiles'" FullSelectorArgument="&lt;webctrl aaname='Mobiles' parentid='nav-xshop' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Mobiles' parentid='nav-xshop' tag='A' type='' class='nav-a  ' check:innerText='Mobiles' /&gt;" Guid="57551dd6-011f-4adc-8f21-093540d21f8c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAAgCAYAAABAQWX9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMVSURBVGhD7ZY9ayJBGMfvu+QD3DfYXkhtkWrRKs2SQi2CB4JgISlCmlyTVNosKZSAQghCQooFIRBQkCASEC3URqvt/vfMmzfq7sSX4+4Cs8kPd2dmn935zTMz++3ouwNLNFaOASvHgJVjwMoxYOUYsHIMWDkGrBwDVo6BfyynhOvmI6plL6Iuil3bH8bOcvIvY4ThDMFNMqI+g/tBiHAUIL9RF0UDfQDz9lVEnaA6oAbhO2759eft/yQ7yym2F/R6dIye4a7VOZV3hKxu8YriWl00n3c2W++g367JZ30JOZQd9Net6NlTwtOUakLSsy4nmYF3WUP1sgA3qZVrnXXS5yj7NZTPPDj6vSvEyImN7+D49ALXfgX5XAbHWvk27CeHOv/wRhKmAbKy/KT+Qa/9gbsW/Wpy3EoHE6oha+yfnaBfz8h4orNYLLhULpa1GDSWWameJ+JtynH9d8z5TSr+DE9lVufhtieyXMSmE4qr7tuGveUUT58xpOf162xxvEJAxZOXEo6YJNWZhI8uvVTY8+WoJWXmjXGfZteis7/raaTl1Oz6IiuNchI1dOl62CrIbMvgYUQFXIJo25dxGE4iap2MZ3852vl1c0w9pEUzQW10OdRRukDAR1KSFlKHTfaim5mgRKsyoxwen2VKAV5OcPum2v/EKxuYaQd3tLvFT9V4DpKjRo4dw5acKrocPtXW5Kx0MF6OmgJGOTy+mjYavQaX4eRqeJ3yuUaNxggqajpvx2FyCL6b9J5RZFnDynQ5Nx2aIrtmToWP+Lx9wa+Ncnh8ypycujeGZAlVvv6oT4LtOFjOBrocldqDR3hcXgpllvZraw77LCimmawU8i2aoppQo5zlmlaT8RkpZH9QhiQ8uDymKHdbM7rzv5JDqV0OMJSZLY4FLbaru9Vk9MEXYXGEGL7Q1i7vX32ehzv6yGSHEqTH5zsS+33zcZQTGcriiXJ9l9yOneXsRxInZ2zBNH1rpODmznGyzIBdUPHXv3NU+X5x/5Kcr4mVY8DKMWDlGLByDFg5BqwcA1aOASvHgJUTi4NfnMLb7Z8VnxcAAAAASUVORK5CYII=" InformativeScreenshot="6004c03908a5646d1c8dd06dfee57ad4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in Bestsellers: The most popular items in Smartphones &amp;amp; Basic Mobiles' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="354, 221, 103, 28" ElementType="Text" FriendlyName="'Today's Deals'" FullSelectorArgument="&lt;webctrl aaname='Today&amp;apos;s Deals' parentid='nav-xshop' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Today&amp;apos;s Deals' parentid='nav-xshop' tag='A' type='' class='nav-a  ' check:innerText='Today&amp;apos;s Deals' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGsAAAAgCAYAAAAVIIajAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASUSURBVGhD7Vg9a+NKFH3/JT8g/0C9IbUKVyYuFjfiFU6KxQaDIIVJsaRJmqSSG5EHDoEEwmJIcGEwCAxeMMaEgHEKJ41Tqbt77owkS/ZIz/F6WWaR4GBJdz7u3DP33JH/2ds3KIceyMnSCDlZGiEnSyPkZGmEnCyNkJOlEXKyNEJOlkbIydIIf56sukO39w4dqWya4+jyO926Z1RU2LbBp8iqdV/J9/0UvNKjre6XiZsXInqha5XtE2iN4MOorbSp0aYfMf8Xby80GXl0bR8q2m6H62cs7cMjW2HbBp8iq9hsIwuwWxiDd3jyTl74fN8mu6zul4kdkSUCM3KVNjXuaIIu/nNP+t/xaPLm8xuad8/IUPb5HP4oWQlkBNkof6XaZZvO7a9ULKzbDyqndO46VKtgF6+Nc0il4wY13bvU/iqcD5Ad/bPgGWPYDrUuT8niOVbaSkiyln0YJtn9D7x9p8d6vC37dEEt92J9vIJFX46xnps2NY+rdBCzrZO1iV/p2DFZJtU6kEpYoC3yFwvvNc3Ibvc5I3EJ+eEfbhWO0xYBlLagvw8bMtYQ860E0RlH71iip91T2iu79IPjjd7hGJObWJ8IKrKA8hNN8X7ebcjnCuQyNh5fnHnCZvdoLkxLG731InISZG3sVzp2S1ZdOj/tNAIZqcJhuOUPqam0m2R1mLxwnEMqlkNigcqTaC8WVUDQcD/vnkT2qxFezJ6SBTzwqxVlpEmGMjtTyNo/ox6C6g8c3JuohXIOKxijhM0Y+YusKprLvgY2j08f2JzyOUHWxn6lY6dkWV0O/Cvdxp24HEYLKIqFrthVpJtVsoSkyICGO7AJqYsWH5A3vbeW/RjfeD7UncEdamiM+DVkkyXrH7IBt5xJFqRZwBnSIkYIg2Xf+tcio+klbAmyNvYrHTslS+r9SuDFAmTAlfbEOEEm4hJSEShLJBciM2UwDJclcBzbqSGQre6Q5kFff+bRVWW1DSONrPA9JDW4D2VuiTFd87wFEPsmGsj3fJtG1sZ+pWOnZCkzR5FZD/FTY3wccf9OD9Eikpm1t2/R7QwLhUQJefqf099BPag3ynZqskr37KNP3jd+dshDcKP6tYIabz4QdxWuNyuzYsj2Kx27rVnl76I4L/oX8lRUaIjgrtasRd+RpzzzBEGPZVuCLBOfCt6yZgVzFDmY/geCEgY0CaNcjZ0gq/TAOz+LrIEbSBxOdJ0XoQL+8x2VRBsTdRFsgZDW8VK6Duonwi6UIiLrkI7gf1rN2tyvdOyWLKAEeeIFRxd/LEenQdjFgsLLp+kznx6DcQrYycydsACzMU3xHCcrrFV86lL962GJ7MUVyhKfJjNkMHFhE0y6IC8KKgCpe5wFHmNM+TukK7bVsTnlJGKuxWgcyTT3LYZrBWH/bexXOrYnKxPyW0kUXZVdfJskv0mWkH2/pBbhi0xpEhDjZ8y/BcQhgsdUfmc1qBQ7FabiF/36TWT9BhRw1OUiLWoK6uI2/5ZoDn3IsuWpkiVnclNVt/nLoQ9ZOXKydEJOlkbIydIIOVkaISdLI+RkaYScLG1g0E9KNAK7hQDpiwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Smartphones &amp;'" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a1aa02d-14ea-4ecb-8c56-e6c5fe460300" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/mobile-phones/b/?ie=UTF8&amp;node=1389401031&amp;ref_=nav_cs_mobiles" DesignTimeRectangle="50, 450, 135, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Smartphones &amp;'" FullSelectorArgument="&lt;webctrl aaname='Smartphones &amp;amp; Basic Mobiles' parentid='s-refinements' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Smartphones &amp;amp; Basic Mobiles' parentid='s-refinements' tag='SPAN' type='' class='' check:innerText='Smartphones &amp;amp; Basic Mobiles' /&gt;" Guid="2eb10e5e-c554-4b1b-8769-83e3ed24513b" ImageBase64="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" InformativeScreenshot="366bfe5b1f664c9222a0ee4a751326a4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Mobile Phones: Buy New Mobiles Online at Best Prices in India | Buy Cell Phones Online - Amazon.in' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="36, 330, 69, 18" ElementType="Text" FriendlyName="'Electronics'" FullSelectorArgument="&lt;webctrl aaname='Electronics' parentid='s-refinements' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Electronics' parentid='s-refinements' tag='SPAN' type='' class='' check:innerText='Electronics' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAAWCAYAAACMq7H+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL1SURBVFhH7ZavkuJAEMbvDag8RAoF6ipqV22hiFocqMNx6nCg4AnAxS0ujjgcOFzkuMi4yHEjv+v5E5KQBLKwdVV3l69qxCQz3T2/dPfkG1rdVQupgVpIDdRCaqAWUgM1hiQShvM5Ajfz/0k5SAwfrothaezoDZAEE3SsLUK9+K8Q8/roDHaIzPxR5SCF2FgWhusDZcw5N3T2fB2kBPuJhc0foM1DH17AIMz8UZUgjYPEzIuqgyR4gohFSHh1KIJzcBrZWwbv9TYkuSdbL8BjBhbnn12L1iQRWHRrTaZyTCRRf44nIMU4Ll3Y/YEqy7d+F0Mv99XiA2ZOF52uQ+8d2JMASbglG1ZhaH/SdxerIMCsL59PsKfHIvLVvDegsh9Q6XRdgpt60Ht+bT2MHenDxfeuRX58ikxLxSz9mnllTBQx241gq2eyvTjobWWDyVSC9DJdw/O8yzgaj9eQ+OEnOqNcvcc+3q0pDioiypaBhbdtWNHotZ9iJhnf8wAsoS8shAxd2XjfZR0lDqZ0mDXOipPeM/RyPpiHFwNYqgipLiZpx8GmyKWgByFxHOfkUAZoUpfzE1bp4dNg009aUD2kQhZX2RBnLGjdSu2t2JMEGNdBqo0phj+is8x9hEm51KQeLDfdfG0nfwvKMdeZpMoqC7aohpAqbeTXfRLSrZg4gz8foUf2eqMl9lER1oOQBM5LyjrqQZWi0htaLvxnMknZuPryz2TSzZhScepPtOfVU789qcqQfLryLyUkh6aqIa0NJDJ3mlN/MJmTStB6tdzU//pk+gGJ+owWw4Ya7KywseoDmTLI9ZDYpxiuelJjSLUxUf9LQyMJOtddSNe3zyV7EroZ1M2TZZOkLlPUdgb6ZnGWOF5OdMLCpZvE2LGdzHFEh5X75PMfuj4rIJGubHT6E3yw9ESfhUSqiol66UKeS97SpRtUKwfpUdE/Si7jSpLZVfeuofR/zXM2CqqIqfLfyegLIP37aiE1UAupgVpIDdRCuivgN+MbE8fAn7nDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft" X="34" Y="14" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Best sellers'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.amazon.in/s?bbn=1389401031&amp;rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389432031&amp;dc&amp;qid=1672724423&amp;rnid=1389401031&amp;ref=lp_1389401031_nr_n_3" DesignTimeRectangle="238, 548, 155, 35" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Best sellers'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='3' isleaf='1' parentid='a-page' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='a-size-extra-large a-color-base a-text-bold' isleaf='1' parentid='a-page' tag='SPAN' aaname='                 Best sellers              ' check:innerText='Best sellers' /&gt;" Guid="e407a32b-7b69-4d9b-bc0e-1e20f9cfe170" ImageBase64="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" InformativeScreenshot="01585b119f18345269d66572205a57c7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in: Smartphones &amp;amp; Basic Mobiles: Electronics: Smartphones, Basic Mobiles &amp;amp; More' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'See more'" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a1aa02d-14ea-4ecb-8c56-e6c5fe460300" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.amazon.in/s?bbn=1389401031&amp;rh=n%3A976419031%2Cn%3A1389401031%2Cn%3A1389432031&amp;dc&amp;qid=1672724423&amp;rnid=1389401031&amp;ref=lp_1389401031_nr_n_3" DesignTimeRectangle="403, 559, 68, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'See more'" FullSelectorArgument="&lt;webctrl aaname='                         See more                     ' idx='2' parentid='a-page' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                         See more                     ' type='' parentid='a-page' tag='SPAN' class='a-size-base-plus a-color-link octopus-pc-card-title-seeMore' check:innerText='See more' /&gt;" Guid="186fafb0-c2e5-4fc9-9268-429121795f1c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEgAAAAYCAYAAABZY7uwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANeSURBVFhH7ZY9ayJRFIbzL1JabpnS0tIy5f6ElJIiiI1FQBRWiIWwQggSAhESUEgRmxDTiFjooBAmYGBSDCiEMEhgBrR499yP+czEmc0GtnBeuMX9fu8z95w7O0i0UQmgCCWAIpQAilACKEIJoAiFA1q9Y65N0FOfMV++y8btVADQGtrDKTKHJex4y1ED3Tc5ZMvkBzS7RpqAZM9GmK9Ek2UuoKojaEtR3zb5AM3v6nRjGujEgUFhqM1GPAwNCdOvNay3ZwzGIyh6VJjS2KUBi69jz5tAXa55L5Nl6lDYWgtLtnjl7jXQXvFhBHk1TLvVgkFpwx2z2WcIoAry480H0voiDHePqsgcsTCs4qC/kL0k8xG/yyI808UKUmzscRtKKEimCcrs5jZayBU9oU3rlh/6OJFr2eXnnS7nkTx7OYVSQlNzz8DPVbimj9nGPvdbR4vZjeHTH2ImGS2ICdlaG13NkB0e6TfIEsTc8FU2rKFe1WhOEz2+sIVeg9Yot6GafACw7CPH1uy8yIagBCA2R7FvjTlCnnkpNNFxfOhosQPRYRVel3uxA+ty3uoFrV9sTMs5qPjwJWToTJ2ZTjfolW59PJ+BJE1aLdC7OkWWk6ZyVMfJ2L0dymUFO8UbaLLOtbjFvv1Vlvc4oHm5of+iD85orbOJrAUlAfn6FwJG+RZz2cLE1zm8wIBVVkN+oEwQvHqNPWovT0VVAJL+bMX0+RGQIwvz6S3yx8xQiUJI3BhhsIJMkcLLKRXsHtaEAQ6rhFTB219FmgGn5B+uLwKSewUPabfv3wkioYBi+twAyNYjTthVbwx5YuMGj28ogRp0Vb1FJj65cX4Y7KdiuknXr/8HKMpnDEBPApCkqnWqrsEwyWtvm4unfwuxvctH3udoekE3OiLEYvr0ATLUe3T437MkSc9f97zGN8uP5VeS5NONPjSbNHvyp0/yIBYdgvIUGWrO7CdXPKVKWNLn+iIgWl05Zx+M7SXWtt5G4qFxEvkngGL69AMaNvGDGfWVKnIP/iRoOM+lW1KUuFXZz16STr3Kwbpj2Mv33YCYdHQDe6WKF+h5/vzDAZFi+AwJMaLoxKP3hyooz7jPcgv7QYtc55tk7+X8EP6FNviMkYO2WwmgCCWAIpQAilACaKOAPwKTRcCse3sqAAAAAElFTkSuQmCC" InformativeScreenshot="b4a4cbde3011dfd77364ede7078ebd72.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in: Smartphones &amp;amp; Basic Mobiles: Electronics: Smartphones, Basic Mobiles &amp;amp; More' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="238, 548, 155, 35" ElementType="Text" FriendlyName="'Best sellers'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='3' isleaf='1' parentid='a-page' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='a-size-extra-large a-color-base a-text-bold' isleaf='1' parentid='a-page' tag='SPAN' aaname='                 Best sellers              ' check:innerText='Best sellers' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Label 'Next page→'" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.amazon.in/gp/bestsellers/electronics/1389432031?ref_=Oct_d_obs_S&amp;pd_rd_w=DU3xc&amp;content-id=amzn1.sym.63783fbe-7156-4f6f-9542-5efc5e74da13&amp;pf_rd_p=63783fbe-7156-4f6f-9542-5efc5e74da13&amp;pf_rd_r=WX7ZS666J8NMSZANDQH5&amp;pd_rd_wg=UREDK&amp;pd_rd_r=3d4a26ce-0039-41da-96ee-78bf0dd0e561" DesignTimeRectangle="894, 562, 106, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Next page→'" FullSelectorArgument="&lt;webctrl aaname='Next page→' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next page→' tag='A' type='' class='' check:innerText='Next page→' /&gt;" Guid="df32e5f3-286e-474b-ad85-c7cb70f7bae9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAAlCAYAAACjxNxUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVpSURBVHhe7ZvPT+NGFMf7H6D8EVFO5IRyIqcop+REbnAiN6K2S7RVRdpK8BeQ04YlLGkvuW1OzS5tCT+6kdquga3kLruKevLNR3OyKELfvjeeOHZ+LEkWs047H8lCz2OPx+87780zDJ9BMZMo4WaUkcJdX1+j+eInPKlUUfp2C59/+VgdAR/s5yc7VeH3f25upBLDGSqcpp2j+HgDx6evcPnuPa6urmSLIkjYz5eX74Xf14tf4+z8QrYMMiDcb7+/xt6zH6Sl+JTsVr/HH6/PpOXHJxxHWlWJFip292o4v3gjrR6ucLymcXpUhI9HlDZv+tY8V7gfmwc4PvlVWoow0To6wcuDn6Xl4ArH1SMXIorw8fbyHSo7e9JycIXjUlRVj+GEdWF9vLjC8XeEIrz066OEmxGUcDOKEm5GCUA4HfvZLJYrGmx5poteyyJT06Wl+BgCEE7DdiSCuUga27pfOq1M58uatD4CrYy5lQZMaf4fCUy4pVwOc+kKxV+PocLZFsyOjo5pDUToKKxWcXzhqH9D12FYQ3qnNsvsQNMNDGuGbaLTGdEmsGEZOnRj/LHfF4EJt63pqKQjWG4Y8vygcEarhEwsjhSl1kw6jmiWhGYPWNRHOobV7r12GxuxJDbbf+P5Ckez9yjTE/vhMdD9hQIWEtR3No15sjP07K6DzWYB0ViC2rg9gWgkjrVmbyoY1M73LHB7IoG1wopvsth6Dctx2c73xwvw3B44AQrHL1dGKpZ3X8gnnNXEWiSH/Y5jkqtQz0WwKi+2KR0699rQtpJIeZ3e8DtxEGcMmZrbOdCpYSmSRKWbAmx/jHRo/XX7NOri2k2td42vnfJIJRnDRssSFnWGdimGaHmC9Zveb7kx+g3uIlDh+IXY6dFiC/yKXuFEuqNUqlmUruRxuOURlu8tpxFNp7GYpqjy+Hlc4fyOMUS0ejMAY/OzqW9vn2JsfZHse6ZewWKkSJOqN/ZO/a4xDcL+mFa8gIUjRJqj2dlmIXrCCEe4qap3rHvzDUVJhvpadMPEYTrhTCfNdieGQRGfiGE+7Tx3IUZtsk/R/4eE4+KIUqtI8d6Dx2k2sEzP9qfzO44JBWeCF44wm3lEk2Vsl2iQ0nF2u4S5pL948UMRko9jtUwphSpUr3bTCUepONtNxSaaeX8q9QuzRQ6lNaubCQlfO6XSDEXcoad9cpyJ5PXTJDyIcN00JWZXd8ZbLaxTJPoijNKjJUs4QzqKE5tR5wq17BQuBE+EOZoIo0V3xrBYaoGWSIFJhdBiZAXPxeMcp/WEs6BVPGuYrVNxFEGqWIdGFaOhNbCZi3kmi1N4LdFs8mrXHftYUNROKxrzQMIRYsH3CEc4lRmdo5SZorTFP8WCL67Noe4uR07h4hYoVhubWbqe+4sNE9AZQyZfwBL3L67LUt+99c2iiE/R+XlaQ+fjK9iv9H1iUGVbKTgpcK3cxGGtL8qNFjbEGChlUkXMP5fqnmIoYAIQbnJEgUDHBPP1Dvypkvsf2jd/x40ZJSID5Js94ST3P/bxCIVw949fuMkxoWv04S1FtSm6Nvm70pfWPy3/UeGc35dutKYX7rCUcypNTrPxHNbr+oNH1YcYKZz6C3h4sawrfPPdiL+A8w5a3oypCB9/vb3EztNn0nJwhWu+OMDJyStpKcLE0fEpXh78Ii0HVzjeq87bnhXh44tHX+H29lZaDq5wDO9Vr+7VpKUIA09393Hx5k9p9fAJx/Be9d2qEi8MsGhn54Pbz5kB4Rjeq87bnnkHLW/GVNXmw8DVIxciraNTkR6HRVqXocIxvFedtz3zDlr1/3EPc3DJz9Uj+71/TetnpHCKcKOEm0mAfwHjLZ+KvFlJdQAAAABJRU5ErkJggg==" InformativeScreenshot="e355e921a60aebeacd2872202c73135f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in Bestsellers: The most popular items in Smartphones &amp;amp; Basic Mobiles' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target DesignTimeRectangle="682, 562, 130, 33" ElementType="ListItem" FriendlyName="'←Previous page'" FullSelectorArgument="&lt;webctrl tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LI' type='' class='a-disabled' aaname='←Previous page' check:innerText='←Previous page' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Product Name'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Url'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;true&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text' name2='Column1' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='2' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="200" ScopeIdentifier="5a1aa02d-14ea-4ecb-8c56-e6c5fe460300" Version="V1">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="347, 231, 992, 9009" DesignTimeScaleFactor="1" FriendlyName="'#1OnePlus Nord'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' tag='DIV' /&gt;" Guid="4b18cd9e-77f5-4197-a885-2a8ab3788940" InformativeScreenshot="1a839c0b61ab6f94395114eaeeb25a54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC%7C01ZTHTZObnL.css,41C-I1lXVwL.css,31ufSReDtSL.css,013z33uKh2L.css,017DsKjNQJL.css,0131vqwP5UL.css,41EWOOlBJ9L.css,11TIuySqr6L.css,01ElnPiDxWL.css,11Qjwq-j69L.css,01Dm5eKVxwL.css,01IdKcBuAdL.css,01y-XAlI+2*' title='Amazon.in Bestsellers: The most popular items in Smartphones &amp;amp; Basic Mobiles' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:BuildDataTable DataTable="[dt_Amazon]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Product_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Url&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,418" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,301" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow(&quot;Product Name&quot;),CurrentRow(&quot;Url&quot;)}]" DataTable="[dt_Amazon]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="338,186" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[Time]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[System.DateTime.Now.ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ModifyText DisplayName="Modify Text" sap:VirtualizedContainerService.HintSize="434,502" sap2010:WorkflowViewState.IdRef="ModifyText_1" OutputText="[Time]" SourceText="[Time]">
+              <ui:ModifyText.Body>
+                <ActivityAction>
+                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ucat:FindAndReplaceTextModification DisplayName="Find and replace text" sap:VirtualizedContainerService.HintSize="334,149" sap2010:WorkflowViewState.IdRef="FindAndReplaceTextModification_1" ReplaceText="-" SearchText="/" />
+                    <ucat:FindAndReplaceTextModification DisplayName="Find and replace text" sap:VirtualizedContainerService.HintSize="334,149" sap2010:WorkflowViewState.IdRef="FindAndReplaceTextModification_2" ReplaceText="-" SearchText=":" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ModifyText.Body>
+            </ui:ModifyText>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="[&quot;Amazon &quot;+Time+&quot; .xlsx&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlVM9S8NQFBW0+QOO2h+gU9vdSbuLNP0HprtDfoBIhYKgWFyFLLpUC10EjbvawcFC4qJDm4CDllQdHHq9JzdfbYLUA4e8d98959738t4cESnMA2afOSuQC40Cg31EkrBtm3Rdp4qqklqtkmEYwUoKDRi4MhZ0u12az+VoYYowzIALg6GMBVqt5gs2ymWyLCuaL+fzQcYEhikDx3H8LkzTpMt2299C2EUG0gbYf6FUikRJZiBtEFaECbo5bjb/ZxAm79Xr/nxb06KY53l+LIG0QaFYjAQ4yOQfQTdTCAy+HJkycIBLfOIQ4AtRhbe1zmajd5fGFt+J+x1hZNBZJfqwEPgbt1sifNwlOoM0NBjcEJ3z8I4XR3E3KXwOiF5aUqy1iEjiDF4vxAS8WpMqvUOiJ2bviKtvSlXkoSDWA4P4Kr89SCJMkMwcB1/qrPATupa8H/4bYHCVGxhNAC0+n8Yd9LliNvzHhOd8wvxGZEYglzWk/AJk0E1AkKBI3AAAAABJRU5ErkJggg==" InformativeScreenshot="14795a746cd41289260651788b0515b9.png" Selector="&lt;html app='chrome.exe' url='https://www.amazon.in/' /&gt;" Url="https://www.amazon.in/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
